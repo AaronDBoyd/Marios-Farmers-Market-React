@@ -8,8 +8,6 @@ import Sunday from './Sunday';
 import Tuesday from './Tuesday';
 
 
-
-
 const marketSchedule = [
   {
     day: "Sunday",
@@ -44,8 +42,8 @@ const marketSchedule = [
   {
     day: "Friday",
     location: "Sellwood",
-    hours: "10:00am - 1:30pm",
-    booth: "69G",
+    hours: "4:20pm - 9:30pm",
+    booth: "69F",
   },
   {
     day: "Saturday",
@@ -73,6 +71,34 @@ export default class Week extends Component {
       return { count: prevState.count + 1}
       }
     }) 
+  }
+
+  sundayState = () => {
+    this.setState( {count: 0})
+  }
+
+  mondayState = () => {
+    this.setState( {count: 1})
+  }
+
+  tuesdayState = () => {
+    this.setState( {count: 2})
+  }
+  
+  wednesdayState = () => {
+    this.setState( {count: 3})
+  }
+  
+  thursdayState = () => {
+    this.setState( {count: 4})
+  }
+  
+  fridayState = () => {
+    this.setState( {count: 5})
+  }
+
+  saturdayState = () => {
+    this.setState( {count: 6})
   }
 
 
@@ -154,7 +180,14 @@ export default class Week extends Component {
     return (
       <React.Fragment>
         {currentlyVisibleState}
-        <button onClick={this.updateState}>{buttonText}</button>
+        {/* <button onClick={this.updateState}>{buttonText}</button> */}
+        <button onClick={this.sundayState}>View Sunday</button>
+        <button onClick={this.mondayState}>View Monday</button>
+        <button onClick={this.tuesdayState}>View Tuesday</button>
+        <button onClick={this.wednesdayState}>View Wednesday</button>
+        <button onClick={this.thursdayState}>View Thursday</button>
+        <button onClick={this.fridayState}>View Friday</button>
+        <button onClick={this.saturdayState}>View Saturday</button>
       </React.Fragment>
     )
   }

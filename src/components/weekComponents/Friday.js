@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-export default function Monday(props) {
+export default function Friday(props) {
   return (
     <React.Fragment>
       <h3>
@@ -15,3 +15,9 @@ export default function Monday(props) {
   )
 }
 
+Friday.propTypes = {
+  day: PropTypes.string,
+  location: PropTypes.string,
+  hours: PropTypes.string,
+  booth: PropTypes.string,
+};
