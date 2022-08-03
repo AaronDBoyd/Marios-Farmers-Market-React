@@ -31,6 +31,9 @@ export default class MarketControl extends React.Component {
     return (
       <React.Fragment>
         {currentlyVisibleState}
+        <br></br>
+        <br></br>
+        <br></br>
         <button onClick={this.handleClick}>{buttonText}</button>
       </React.Fragment>
     )
