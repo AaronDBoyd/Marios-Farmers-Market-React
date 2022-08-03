@@ -30,7 +30,7 @@ export default class MarketControl extends React.Component {
     return (
       <React.Fragment>
         <button onClick={this.handleClick}>{buttonText}</button>
-        
+
         <br></br>
         <br></br>
 

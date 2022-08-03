@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 import Header from "./Header";
-import MarketControl from './MarketControl'
+import MarketControl from "./MarketControl";
 
 function App() {
   return (

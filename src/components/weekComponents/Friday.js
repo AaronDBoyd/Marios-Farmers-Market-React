@@ -1,5 +1,5 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from "react";
+import PropTypes from "prop-types";
 
 export default function Friday(props) {
   return (
@@ -11,8 +11,7 @@ export default function Friday(props) {
       <p>Booth space: {props.booth}</p>
       <hr />
     </React.Fragment>
-    
-  )
+  );
 }
 
 Friday.propTypes = {

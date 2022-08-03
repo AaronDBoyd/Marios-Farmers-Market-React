@@ -1,10 +1,10 @@
-import React from 'react'
-import Month from './Month'
+import React from "react";
+import Month from "./Month";
 
-const availableProduce = [  
-  {  
+const availableProduce = [
+  {
     month: "January",
-    selection: [  
+    selection: [
       "Apples",
       "Hazelnuts",
       "Pears",
@@ -12,24 +12,24 @@ const availableProduce = [
       "Mushrooms",
       "Onions",
       "Potatoes",
-      "Turnips"
-    ]
+      "Turnips",
+    ],
   },
-  {  
+  {
     month: "February",
-    selection: [  
+    selection: [
       "Apples",
       "Hazelnuts",
       "Pears",
       "Garlic",
       "Mushrooms",
       "Onions",
-      "Potatoes"
-    ]
+      "Potatoes",
+    ],
   },
-  {  
+  {
     month: "March",
-    selection: [  
+    selection: [
       "Apples",
       "Hazelnuts",
       "Pears",
@@ -37,12 +37,12 @@ const availableProduce = [
       "Garlic",
       "Mushrooms",
       "Onions",
-      "Potatoes"
-    ]
+      "Potatoes",
+    ],
   },
-  {  
+  {
     month: "April",
-    selection: [  
+    selection: [
       "Apples",
       "Hazelnuts",
       "Pears",
@@ -52,12 +52,12 @@ const availableProduce = [
       "Lettuce",
       "Mushrooms",
       "Onions",
-      "Potatoes"
-    ]
+      "Potatoes",
+    ],
   },
-  {  
+  {
     month: "May",
-    selection: [  
+    selection: [
       "Apples",
       "Hazelnuts",
       "Pears",
@@ -67,12 +67,12 @@ const availableProduce = [
       "Garlic",
       "Lettuce",
       "Potatoes",
-      "Radishes"
-    ]
+      "Radishes",
+    ],
   },
-  {  
+  {
     month: "June",
-    selection: [  
+    selection: [
       "Apples",
       "Hazelnuts",
       "Pears",
@@ -89,12 +89,12 @@ const availableProduce = [
       "Mushrooms",
       "Potatoes",
       "Radishes",
-      "Squash"
-    ]
+      "Squash",
+    ],
   },
-  {  
+  {
     month: "July",
-    selection: [  
+    selection: [
       "Apples",
       "Hazelnuts",
       "Pears",
@@ -125,12 +125,12 @@ const availableProduce = [
       "Potatoes",
       "Radishes",
       "Squash",
-      "Turnips"
-    ]
+      "Turnips",
+    ],
   },
-  {  
+  {
     month: "August",
-    selection: [  
+    selection: [
       "Apples",
       "Apricots",
       "Blackberries",
@@ -165,12 +165,12 @@ const availableProduce = [
       "Potatoes",
       "Radishes",
       "Squash",
-      "Turnips"
-    ]
+      "Turnips",
+    ],
   },
-  {  
+  {
     month: "September",
-    selection: [  
+    selection: [
       "Apples",
       "Blueberries",
       "Grapes",
@@ -199,12 +199,12 @@ const availableProduce = [
       "Potatoes",
       "Radishes",
       "Squash",
-      "Turnips"
-    ]
+      "Turnips",
+    ],
   },
-  {  
+  {
     month: "October",
-    selection: [  
+    selection: [
       "Apples",
       "Grapes",
       "Hazelnuts",
@@ -232,12 +232,12 @@ const availableProduce = [
       "Pumpkins",
       "Radishes",
       "Squash",
-      "Turnips"
-    ]
+      "Turnips",
+    ],
   },
-  {  
+  {
     month: "November",
-    selection: [  
+    selection: [
       "Apples",
       "Hazelnuts",
       "Pears",
@@ -249,12 +249,12 @@ const availableProduce = [
       "Onions",
       "Potatoes",
       "Squash",
-      "Turnips"
-    ]
+      "Turnips",
+    ],
   },
-  {  
+  {
     month: "December",
-    selection: [  
+    selection: [
       "Apples",
       "Hazelnuts",
       "Pears",
@@ -265,22 +265,19 @@ const availableProduce = [
       "Mushrooms",
       "Onions",
       "Potatoes",
-      "Turnips"
-    ]
-  }
+      "Turnips",
+    ],
+  },
 ];
 
 export default function Seasonal() {
   return (
     <React.Fragment>
       <h2>- Seasonal Produce -</h2>
-      <hr/>
-      {availableProduce.map((month, index) =>
-        <Month month={month.month}
-              products={month.selection}
-              key={index}
-        />
-      )}
+      <hr />
+      {availableProduce.map((month, index) => (
+        <Month month={month.month} products={month.selection} key={index} />
+      ))}
     </React.Fragment>
-  )
+  );
 }
